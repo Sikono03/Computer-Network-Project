@@ -21,15 +21,17 @@ _VLANs & Subnets_:
 | VLAN 60 | 192.168.60.0/24 | 192.168.60.1  |  PC11,PC12,PC13,PC14,PC15|
 | VLAN 11 | 192.168.11.0/24 | 192.168.11.1  | Server subnet: DHCP, DNS, Web Server|
 
-|_Router1 Sub-interfaces_ |   
-|-------------------------|
-| Gi0/1.30 | -> 192.168.30.1|   
-| Gi0/1.50 | ->  192.168.50.1 | 
-| Gi0/2.60 | -> 192.168.60.1 |         
-| Gi0/2.11 | -> 192.168.11.1 |
+_Router1 Sub-interfaces_:
+| Interface | IP |
+|-----------|-----|
+| Gi0/1.30 |  192.168.30.1|   
+| Gi0/1.50 |  192.168.50.1 | 
+| Gi0/2.60 |  192.168.60.1 |         
+| Gi0/2.11 |  192.168.11.1 |
 
-| _Trunk Links_|
-|--------------|
+ _Trunk Links_:
+| Link | VLANs |
+|------|------|
 | Switch0 <-> Router1 |VLANs 30,50,60,11 |
 | Switch0 <-> Switch1 |VLANs 30,50 |
 | Switch1 <-> Router1 |VLANs 60,11 |
