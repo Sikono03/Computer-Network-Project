@@ -13,28 +13,37 @@ _Devices_:
   * 3x Server-DHCP, DNS,and Web Server
     
 _VLANs & Subnets_:
-VLAN      Subnet            Gateway        Purpose
-VLAN 30   192.168.30.0/24  192.168.30.1    PC0,PC1,PC3,PC4,PC5
-VLAN 50   192.168.50.0/24  192.168.50.1    PC6,PC7,PC8,PC9,PC10
-VLAN 60   192.168.60.0/24  192.168.60.1    PC11,PC12,PC13,PC14,PC15
-VLAN 11   192.168.11.0/24  192.168.11.1    Server subnet: DHCP, DNS, Web Server
+|VLAN   |   Subnet |         Gateway  |      Purpose|
+|-------|-----------|--------------------|------------|
+| VLAN 30 | 192.168.30.0/24 | 192.168.30.1  |  PC0,PC1,PC3,PC4,PC5|
+| VLAN 50 | 192.168.50.0/24 | 192.168.50.1  |  PC6,PC7,PC8,PC9,PC10|
+| VLAN 60 | 192.168.60.0/24 | 192.168.60.1  |  PC11,PC12,PC13,PC14,PC15|
+| VLAN 11 | 192.168.11.0/24 | 192.168.11.1  | Server subnet: DHCP, DNS, Web Server|
 
-_Router1 Sub-interfaces_                      _Trunk Links_:
+|_Router1 Sub-interfaces_ |   
+|-------------------------|
+| Gi0/1.30 | -> 192.168.30.1|   
+| Gi0/1.50 | ->  192.168.50.1 | 
+| Gi0/2.60 | -> 192.168.60.1 |         
+| Gi0/2.11 | -> 192.168.11.1 |
 
-Gi0/1.30 -> 192.168.30.1                    Switch0 <-> Router1: VLANs 30,50,60,11
-Gi0/1.50 -> 192.168.50.1                    Switch0 <-> Switch1: VLANs 30,50
-Gi0/2.60 -> 192.168.60.1                    Switch1 <-> Router1: VLANs 60,11
-Gi0/2.11 -> 192.168.11.1
+| _Trunk Links_|
+|--------------|
+| Switch0 <-> Router1 |VLANs 30,50,60,11 |
+| Switch0 <-> Switch1 |VLANs 30,50 |
+| Switch1 <-> Router1 |VLANs 60,11 |
+
 
 _WAN Link_:
 
 Router1 <-> ISP Router0 - point-to-point, ISP 200.100.100.1/24
 
 _Server(VLAN 11)_
-
- Server1-DHCP - 192.168.11.2
- Server2-Dns - 192.168.11.3
- Server0-Web Server - 192.168.11.4
+| Server | IP Address |
+|--------|------------|
+| Server1-DHCP | 192.168.11.2 |
+| Server2-DNS | 192.168.11.3 |
+| Server0-Web Server | 192.168.11.4 |
  
 _Routing method_:
 
