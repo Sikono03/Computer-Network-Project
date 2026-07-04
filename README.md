@@ -1,5 +1,6 @@
 # Computer-Network-Project
-##Introduction to Computer Networks- Final Project Design
+## Introduction to Computer Networks- Final Project Design
+
 __Overview__
 
 The project simulates a small-medium network in Cisco Packet Tracer, using VLAN segmentation, inter-VLAN routing, DHCP,DNS,a Web server, and NAT/ISP connectivity to the outside network.
