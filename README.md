@@ -32,8 +32,8 @@ _Router1 Sub-interfaces_:
  _Trunk Links_:
 | Link | VLANs |
 |------|------|
-| Switch0 <-> Router1 |VLANs 30,50,60,11 |
-| Switch0 <-> Switch1 |VLANs 30,50 |
+| Switch0 <-> Router1 |VLANs 30,50 |
+| Switch0 <-> Switch1 |VLANs 30,50,60,11 |
 | Switch1 <-> Router1 |VLANs 60,11 |
 
 
