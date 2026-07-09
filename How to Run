@@ -1,0 +1,22 @@
+## What You Need
+  * Cisco Packet Tracer (https://www.netacad.com/courses/getting-started-cisco-packet-tracer?courseLang=en-US)
+  * The file _project topology.pkt_
+## Step 1: Open
+  * Open packet tracer
+  * File -> Open and select _project topology.pkt_
+  * Togole Realtime mode (bottom-right corner) to run the network live
+  * Wait 30 seconds for boot up and the links to turn green
+## Step 2: Check PCs IP address
+  * Click any PC
+  * Desktop -> Command prompt
+  * Type: ipconfig
+  * An IP address will match the VLAN (example - PC0: 192.168.30.x)
+## Step 3: Ping PC to a different VLAN
+  * In the same command prompt- ping 192.168.50.10
+## Step 4: Test Web Server
+  * Same PC, Desktop -> Web Browser
+  * Type: https://webserver.local
+## Step 5: Test Internet Connection
+  * Back to command prompt- ping 200.100.100.1
+
+  
