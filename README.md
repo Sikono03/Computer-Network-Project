@@ -1,5 +1,5 @@
 # Computer-Network-Project
-## Introduction to Computer Networks- Final Project Design
+## CSCE 3530.401 Introduction to Computer Networks- Final Project Design
 
 __Overview__
 
@@ -64,7 +64,7 @@ Router1 sends all external traffic to the ISP Router using a default route. The 
 
 __Verification steps__:
 
-* _ping_ and __traceroute_ between VLANs to confirm inter-VLAN routing.
+* _ping_ and _traceroute_ between VLANs to confirm inter-VLAN routing.
 * _ipconfig/all_ on PCs to confirm DHCP-assigned addresses and correct gateway.
 * _nslookup_ to confirm DNS resolution.
 * Browser test to Web Server IP/hostname to confirm HTTP access.
